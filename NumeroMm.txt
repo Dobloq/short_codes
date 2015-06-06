@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random num = new Random();
+
+            int n = num.Next(0, 999);
+            int r;
+            string respuesta;
+            do
+            {
+                Console.WriteLine("Introduzca el numero");
+                respuesta = Console.ReadLine();
+                r = Convert.ToInt32(respuesta);
+                if (r>n)
+                {
+                    Console.WriteLine("El numero es menor");
+                }
+                else if (r<n)
+                {
+                    Console.WriteLine("El numero es mayor");
+                }
+            } while (r!=n);
+            Console.WriteLine("Has acertado");
+            Console.ReadKey();
+        }
+    }
+}
