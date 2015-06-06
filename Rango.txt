@@ -1,0 +1,14 @@
+var r1 = parseInt(prompt("Inicio del rango"));
+var r2 = prompt("Fin del rango");
+var resultado = new Array();
+var numeros = new Array(); 
+for (r1;r1<=r2;r1++){	numeros.push(r1);}
+var n = numeros.length;
+for ( i = 0 ;i!=n; i++){	
+	var num = Math.random() * (numeros.length);
+	if (num<0){num = (Math.floor(num))+1;} 
+	else {num=(Math.floor(num));}
+	resultado[i]=numeros[num];
+	numeros.splice(num,1);
+}
+resultado;
