@@ -1,3 +1,8 @@
+Juego de parejas con 6 pares
+Hecho en Javascript
+Necesita 6 imagenes que seran las parejas y son serian los archivos pareja1,pareja2....,pareja6
+
+
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
 var img3 = document.getElementById("img3");
@@ -11,7 +16,7 @@ var img10 = document.getElementById("img10");
 var img11 = document.getElementById("img11");
 var img12 = document.getElementById("img12");
 var img = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12];
-var source = ["dado1.jpg","dado2.jpg","dado3.jpg","dado4.jpg","dado5.jpg","dado6.jpg","dado1.jpg","dado2.jpg","dado3.jpg","dado4.jpg","dado5.jpg","dado6.jpg"];
+var source = ["pareja1.jpg","pareja2.jpg","pareja3.jpg","pareja4.jpg","pareja5.jpg","pareja6.jpg","pareja1.jpg","pareja2.jpg","pareja3.jpg","pareja4.jpg","pareja5.jpg","pareja6.jpg"];
 function reiniciar(){
 	for (var i =0;i<12;i++){
 		var num = Math.random() * (img.length);

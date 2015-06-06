@@ -1,3 +1,7 @@
+Numeros aleatorios sin repeticiones entre 2 numeros introducidos por el usuario
+Hecho en Javascript
+
+
 var r1 = parseInt(prompt("Inicio del rango"));
 var r2 = prompt("Fin del rango");
 var resultado = new Array();

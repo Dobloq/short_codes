@@ -1,3 +1,8 @@
+Juego consistente en acertar un numero aleatorio mediante indicaciones de mayor o menor proporcionadas por el sistema
+Hecho en C#
+
+------------------------------------------------------------------------------------------------------------------------
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
