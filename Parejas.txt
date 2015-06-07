@@ -1,6 +1,3 @@
-Juego de parejas con 6 pares
-Hecho en Javascript
-Necesita 6 imagenes que seran las parejas y son serian los archivos pareja1,pareja2....,pareja6
 
 var cuerpo = document.getElementsByTagName("body")[0];
 var imagen1 = document.createElement("img")
