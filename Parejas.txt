@@ -1,0 +1,50 @@
+Juego de parejas con 6 pares
+Hecho en Javascript
+Necesita 6 imagenes que seran las parejas y son serian los archivos pareja1,pareja2....,pareja6
+
+var cuerpo = document.getElementsByTagName("body")[0];
+var imagen1 = document.createElement("img")
+var imagen2 = document.createElement("img")
+var imagen3 = document.createElement("img")
+var imagen4 = document.createElement("img")
+var imagen5 = document.createElement("img")
+var imagen6 = document.createElement("img")
+var imagen7 = document.createElement("img")
+var imagen8 = document.createElement("img")
+var imagen9 = document.createElement("img")
+var imagen10 = document.createElement("img")
+var imagen11 = document.createElement("img")
+var imagen12 = document.createElement("img")
+var boton = document.createElement("button")
+boton.setAttribute("onClick","reiniciar()")
+var t = document.createTextNode("Reiniciar")
+boton.appendChild(t)
+
+var img = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12];
+/*var source = ["pareja1.jpg","pareja2.jpg","pareja3.jpg","pareja4.jpg","pareja5.jpg","pareja6.jpg","pareja1.jpg","pareja2.jpg","pareja3.jpg","pareja4.jpg","pareja5.jpg","pareja6.jpg"];*/
+
+var source = ["http://images.clipartlogo.com/files/images/23/236978/dado-1_t","http://clipart-finder.com/data/preview/dado_2.png","http://vignette1.wikia.nocookie.net/zh.uncyclopedia/images/4/42/2D%E9%AA%B0%E5%AD%903.png/revision/latest?cb=20140620032147","http://www.pubzi.com/f/th-dado-4.png","https://lh3.googleusercontent.com/-b11gZ1ZagZU/TYRB_4DzfZI/AAAAAAAAAbU/tqMKlvkS2UU/s1600/dado_5.png","http://www.lawebdelprogramador.com/usr/147000/147685/527560a9ddd30-dado6.png","http://images.clipartlogo.com/files/images/23/236978/dado-1_t","http://clipart-finder.com/data/preview/dado_2.png","http://vignette1.wikia.nocookie.net/zh.uncyclopedia/images/4/42/2D%E9%AA%B0%E5%AD%903.png/revision/latest?cb=20140620032147","http://www.pubzi.com/f/th-dado-4.png","https://lh3.googleusercontent.com/-b11gZ1ZagZU/TYRB_4DzfZI/AAAAAAAAAbU/tqMKlvkS2UU/s1600/dado_5.png","http://www.lawebdelprogramador.com/usr/147000/147685/527560a9ddd30-dado6.png"]
+
+function reiniciar(){
+	for (var i =0;i<12;i++){
+		var num = Math.random() * (img.length);
+		if (num<0){num = (Math.floor(num))+1;} 
+		else {num=(Math.floor(num));}
+		(img[i]).src = source[num];
+		img.splice(num,1);
+		source.splice(num,1);
+		}
+	}
+cuerpo.appendChild(img1)
+cuerpo.appendChild(img2)
+cuerpo.appendChild(img3)
+cuerpo.appendChild(img4)
+cuerpo.appendChild(img5)
+cuerpo.appendChild(img6)
+cuerpo.appendChild(img7)
+cuerpo.appendChild(img8)
+cuerpo.appendChild(img9)
+cuerpo.appendChild(img10)
+cuerpo.appendChild(img11)
+cuerpo.appendChild(img12)
+cuerpo.appendChild(boton)
