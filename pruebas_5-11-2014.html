@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pruebas</title>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<td>Item 1</td> 
+<td><input type="number" id="precio1" /></td>
+<td><button type="button" onclick="var qty1 = document.getElementById('qty1');qty1.value = parseInt(qty1.value)+1;var value1 = document.getElementById('value1'); var precio = parseInt(document.getElementById('precio1').value);
+total = parseInt(document.getElementById('qty1').value); value1.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty1 = document.getElementById('qty1');qty1.value = parseInt(qty1.value)-1;var value1 = document.getElementById('value1'); var precio = parseInt(document.getElementById('precio1').value);
+total = parseInt(document.getElementById('qty1').value); value1.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty1" value=0 onchange="var value1 = document.getElementById('value1'); var precio = parseInt(document.getElementById('precio1').value);
+total = parseInt(document.getElementById('qty1').value); value1.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value1" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 2</td> 
+<td><input type="number" id="precio2" /></td>
+<td><button type="button" onclick="var qty2 = document.getElementById('qty2');qty2.value = parseInt(qty2.value)+1;var value2 = document.getElementById('value2'); var precio = parseInt(document.getElementById('precio2').value);
+total = parseInt(document.getElementById('qty2').value); value2.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty2 = document.getElementById('qty2');qty2.value = parseInt(qty2.value)-1;var value2 = document.getElementById('value2'); var precio = parseInt(document.getElementById('precio2').value);
+total = parseInt(document.getElementById('qty2').value); value2.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty2" value=0 onchange="var value2 = document.getElementById('value2'); var precio = parseInt(document.getElementById('precio2').value);
+total = parseInt(document.getElementById('qty2').value); value2.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value2" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 3</td> 
+<td><input type="number" id="precio3" /></td>
+<td><button type="button" onclick="var qty3 = document.getElementById('qty3');qty3.value = parseInt(qty3.value)+1;var value3 = document.getElementById('value3'); var precio = parseInt(document.getElementById('precio3').value);
+total = parseInt(document.getElementById('qty3').value); value3.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty3 = document.getElementById('qty3');qty3.value = parseInt(qty3.value)-1;var value3 = document.getElementById('value3'); var precio = parseInt(document.getElementById('precio3').value);
+total = parseInt(document.getElementById('qty3').value); value3.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty3" value=0 onchange="var value3 = document.getElementById('value3'); var precio = parseInt(document.getElementById('precio3').value);
+total = parseInt(document.getElementById('qty3').value); value3.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value3" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 4</td> 
+<td><input type="number" id="precio4" /></td>
+<td><button type="button" onclick="var qty4 = document.getElementById('qty4');qty4.value = parseInt(qty4.value)+1;var value4 = document.getElementById('value4'); var precio = parseInt(document.getElementById('precio4').value);
+total = parseInt(document.getElementById('qty4').value); value4.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty4 = document.getElementById('qty4');qty4.value = parseInt(qty4.value)-1;var value4 = document.getElementById('value4'); var precio = parseInt(document.getElementById('precio4').value);
+total = parseInt(document.getElementById('qty4').value); value4.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty4" value=0 onchange="var value4 = document.getElementById('value4'); var precio = parseInt(document.getElementById('precio4').value);
+total = parseInt(document.getElementById('qty4').value); value4.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value4" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 5</td> 
+<td><input type="number" id="precio5" /></td>
+<td><button type="button" onclick="var qty5 = document.getElementById('qty5');qty5.value = parseInt(qty5.value)+1;var value5 = document.getElementById('value5'); var precio = parseInt(document.getElementById('precio5').value);
+total = parseInt(document.getElementById('qty5').value); value5.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty5 = document.getElementById('qty5');qty5.value = parseInt(qty5.value)-1;var value5 = document.getElementById('value5'); var precio = parseInt(document.getElementById('precio5').value);
+total = parseInt(document.getElementById('qty5').value); value5.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty5" value=0 onchange="var value5 = document.getElementById('value5'); var precio = parseInt(document.getElementById('precio5').value);
+total = parseInt(document.getElementById('qty5').value); value5.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value5" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 6</td> 
+<td><input type="number" id="precio6" /></td>
+<td><button type="button" onclick="var qty6 = document.getElementById('qty6');qty6.value = parseInt(qty6.value)+1;var value6 = document.getElementById('value6'); var precio = parseInt(document.getElementById('precio6').value);
+total = parseInt(document.getElementById('qty6').value); value6.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty6 = document.getElementById('qty6');qty6.value = parseInt(qty6.value)-1;var value6 = document.getElementById('value6'); var precio = parseInt(document.getElementById('precio6').value);
+total = parseInt(document.getElementById('qty6').value); value6.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty6" value=0 onchange="var value6 = document.getElementById('value6'); var precio = parseInt(document.getElementById('precio6').value);
+total = parseInt(document.getElementById('qty6').value); value6.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value6" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 7</td> 
+<td><input type="number" id="precio7" /></td>
+<td><button type="button" onclick="var qty7 = document.getElementById('qty7');qty7.value = parseInt(qty7.value)+1;var value7 = document.getElementById('value7'); var precio = parseInt(document.getElementById('precio7').value);
+total = parseInt(document.getElementById('qty7').value); value7.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty7 = document.getElementById('qty7');qty7.value = parseInt(qty7.value)-1;var value7 = document.getElementById('value7'); var precio = parseInt(document.getElementById('precio7').value);
+total = parseInt(document.getElementById('qty7').value); value7.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty7" value=0 onchange="var value7 = document.getElementById('value7'); var precio = parseInt(document.getElementById('precio7').value);
+total = parseInt(document.getElementById('qty7').value); value7.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value7" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 8</td> 
+<td><input type="number" id="precio8" /></td>
+<td><button type="button" onclick="var qty8 = document.getElementById('qty8');qty8.value = parseInt(qty8.value)+1;var value8 = document.getElementById('value8'); var precio = parseInt(document.getElementById('precio8').value);
+total = parseInt(document.getElementById('qty8').value); value8.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty8 = document.getElementById('qty8');qty8.value = parseInt(qty8.value)-1;var value8 = document.getElementById('value8'); var precio = parseInt(document.getElementById('precio8').value);
+total = parseInt(document.getElementById('qty8').value); value8.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty8" value=0 onchange="var value8 = document.getElementById('value8'); var precio = parseInt(document.getElementById('precio8').value);
+total = parseInt(document.getElementById('qty8').value); value8.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value8" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 9</td> 
+<td><input type="number" id="precio9" /></td>
+<td><button type="button" onclick="var qty9 = document.getElementById('qty9');qty9.value = parseInt(qty9.value)+1;var value9 = document.getElementById('value9'); var precio = parseInt(document.getElementById('precio9').value);
+total = parseInt(document.getElementById('qty9').value); value9.value=precio*total;">+</button></td>
+<td><button type="button" onclick="var qty9 = document.getElementById('qty9');qty9.value = parseInt(qty9.value)-1;var value9 = document.getElementById('value9'); var precio = parseInt(document.getElementById('precio9').value);
+total = parseInt(document.getElementById('qty9').value); value9.value=precio*total;">-</button></td>
+<td><input type="numer" id="qty9" value=0 onchange="var value9 = document.getElementById('value9'); var precio = parseInt(document.getElementById('precio9').value);
+total = parseInt(document.getElementById('qty9').value); value9.value=precio*total;" /></td>
+<td>Total:</td>
+<td><input type="text" id="value9" disabled="disabled" /></td>
+</tr>
+
+<tr>
+<td>Item 10</td> 
+<td><input type="number" id="precio10" /></td>
+<td><button type="button" onclick="var qty10 = document.getElementById('qty10');qty10.value = parseInt(qty10.value)+1;var value10 = document.getElementById('value10'); var precio = parseInt(document.getElementById('precio10').value);
+total = parseInt(document.getElementById('qty10').value); value10.value=precio*total;calcular()">+</button></td>
+<td><button type="button" onclick="var qty10 = document.getElementById('qty10');qty10.value = parseInt(qty10.value)-1;var value10 = document.getElementById('value10'); var precio = parseInt(document.getElementById('precio10').value);
+total = parseInt(document.getElementById('qty10').value); value10.value=precio*total;calcular()">-</button></td>
+<td><input type="numer" id="qty10" value=0 onchange="var value10 = document.getElementById('value10'); var precio = parseInt(document.getElementById('precio10').value);calcular();
+total = parseInt(document.getElementById('qty10').value); value10.value=precio*total" /></td>
+<td>Total:</td>
+<td><input type="text" id="value10" disabled="disabled" /></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td>
+<td>Subtotal:</td>
+<td><input type="number" disabled="disabled" id="subtotal" /></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td>
+<td>IVA 21%:</td>
+<td><input type="number" disabled="disabled" id="iva" /></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td>
+<td>TOTAL:</td>
+<td><input type="number" disabled="disabled" id="fin" /></td>
+</tr>
+</table>
+</form>
+<script>
+var total;
+function calcular(){
+	var suma = parseInt(value1.value)+parseInt(value2.value)+parseInt(value3.value)+parseInt(value4.value)+parseInt(value5.value)+parseInt(value6.value)+parseInt(value7.value)+parseInt(value8.value)+parseInt(value9.value)+parseInt(value10.value);
+	var subtotal = document.getElementById("subtotal");
+	subtotal.value=suma;
+	var iva = document.getElementById('iva');
+	iva.value=suma*0.21;
+	var fin = document.getElementById('fin');
+	fin.value=suma*1.21;
+	}
+</script>
+</body>
+</html>

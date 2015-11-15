@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Juegodememoria
+{
+    public partial class Form1 : Form
+    {
+        public string[] palabras = new string[10];
+        public int i = 0;
+        public string check = "tuberia";
+        public Form1()
+        {
+            InitializeComponent();
+            palabras[0] = "tuberia";
+            palabras[1] = "tornillo";
+            palabras[2] = "destornillador";
+            palabras[3] = "rosca";
+            palabras[4] = "clavo";
+            palabras[5] = "martillo";
+            palabras[6] = "taladro";
+            palabras[7] = "anilla";
+            palabras[8] = "caja";
+            palabras[9] = "cinta";
+            palabra.Text = palabras[0];
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void comprobar_Click(object sender, EventArgs e)
+        {
+            if (i == 0)
+            {
+                if (textBox1.Text == check)
+                {
+                    i++;
+                    palabra.Text = palabras[i];
+                    textBox1.Text = "";
+                }
+                else 
+                {   MessageBox.Show("Te has equivocado");
+                Close();
+                }
+            }
+            else
+            {
+                check += ","+palabras[i];
+                if (textBox1.Text == check) {
+                    if (i==9)
+                    {
+                        MessageBox.Show("Felicidades, has ganado"); Close();
+                    }
+                    else { 
+                    i++;
+                    palabra.Text = palabras[i];
+                    textBox1.Text = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Te has equivocado"); Close();
+                }
+            }
+        }
+    }
+}

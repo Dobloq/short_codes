@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--<script type="text/javascript" src="blanco.js"></script>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pruebas</title>
+</head>
+<body>
+<form id="form" onsubmit="reset()">
+
+<fieldset>
+<label for="nombre">Nombre </label>
+<input id="nombre" type="text"/>
+<label for="apellidos">Apellidos </label>
+<input id="apellidos"/>
+</fieldset>
+
+<fieldset>
+<label for="dni">DNI </label>
+<input id="dni" type="number" maxlength="8" />
+<label for="dniletra">Letra </label>
+<input id="dniletra" type="text" maxlength="1" />
+</fieldset>
+
+<fieldset>
+<label for="email">Correo </label>
+<input id="email" type="email"  />
+<label for="fecha">Fecha de nacimiento </label>
+<input id="fecha" type="date" />
+</fieldset>
+
+<label for="sexo">Sexo </label>
+<fieldset id="sexo">
+<label for="hombre">Hombre </label>
+<input id="hombre" type="radio" name="sexo" />
+<label for="mujer">Mujer </label>
+<input id="mujer" type="radio" name="sexo" />
+</fieldset>
+
+<fieldset>
+<label for="nick">Nick </label>
+<input id="nick" type="text" />
+<label for="pass1">Contraseña </label>
+<input id="pass1" type="password" />
+<label for="pass2">Repita la contraseña </label>
+<input id="pass2" type="password" />
+</fieldset>
+
+<label for="hoby">Aficiones </label>
+<fieldset id="hoby">
+<label for="ciencias">Ciencias </label>
+<input id="ciencias" type="checkbox" name="hoby" value="Ciencias" />
+<label for="tecno">Tecnología </label>
+<input id="tecno" type="checkbox" name="hoby" value="Tecnología" />
+<label for="poli">Política </label>
+<input id="poli" type="checkbox" name="hoby" value="Política" />
+<label for="sport">Deportes </label>
+<input id="sport" type="checkbox" name="hoby" value="Deportes" />
+<label for="cine">Cine </label>
+<input id="cine" type="checkbox" name="hoby" value="Cine" />
+</fieldset>
+
+
+<label for="banco">Número de cuenta bancaria </label>
+<fieldset id="banco">
+<input id="banco1" type="number" maxlenght="4" />
+<input id="banco2" type="number" maxlength="4" />
+<input id="banco3" type="number" maxlength="2" />
+<input id="banco4" type="number" maxlength="10" />
+</fieldset>
+
+<input type="submit" form="form" value="Enviar" />
+</form>
+
+<script>
+
+</script>
+</body>
+</html>
