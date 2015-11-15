@@ -22,7 +22,7 @@ var boton = document.createElement("button")
 boton.setAttribute("onClick","reiniciar()")
 var t = document.createTextNode("Reiniciar")
 boton.appendChild(t)
-
+ 
 var img = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12];
 /*var source = ["pareja1.jpg","pareja2.jpg","pareja3.jpg","pareja4.jpg","pareja5.jpg","pareja6.jpg","pareja1.jpg","pareja2.jpg","pareja3.jpg","pareja4.jpg","pareja5.jpg","pareja6.jpg"];*/
 
